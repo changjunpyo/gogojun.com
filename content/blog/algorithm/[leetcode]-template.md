@@ -2,13 +2,12 @@
 title: '[leetcode] Template'
 date: 2021-03-04 19:03:59
 category: algorithm
-thumbnail: { thumbnailSrc }
 draft: true
 ---
 
 
 ## Problem
-[239. Sliding window maximum](https://leetcode.com/problems/sliding-window-maximum/)
+[1. name](https://leetcode.com/problems/xxx)
 
 ## Solution
 
