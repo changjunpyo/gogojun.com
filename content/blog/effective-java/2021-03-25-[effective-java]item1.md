@@ -1,7 +1,7 @@
 ---
-title: '[Effective Java 3e] 생성자 대신 정적 팩토리 메서드를 고려하자'
+title: '[effective-Java] Item1. 생성자 대신 정적 팩토리 메서드를 고려하자'
 date: 2021-03-25 22:03:47
-category: java
+category: effective-java
 thumbnail: { thumbnailSrc }
 draft: false
 ---
@@ -98,3 +98,7 @@ else
 기본적으로 생성자와 정적 팩토리 메서드는 각자의 쓰임새가 있으니 상대적인 장단점을 이해하고 사용하는 것이 중요하다. 
 
 따라서 여기서 알아가야 하는 교훈은 무의식적으로 생성자를 통해 생성할 필요가 없다는 것, 상속이 요구되는 상황이 아니라면 정적 팩토리 메서드에 대한 고려가 필요하다는 점이다.
+
+
+#### 참조
+*1. Effective java 3/e , by Joshua Bloch*
