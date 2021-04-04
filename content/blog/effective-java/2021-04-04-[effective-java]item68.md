@@ -1,6 +1,6 @@
 ---
 title: '[effective-Java] Item68. 일반적으로 통용되는 명명 규칙을 따르라'
-date: 2021-04-04 20:04:52
+date: 2021-04-04 20:10:52
 category: effective-java
 thumbnail: { thumbnailSrc }
 draft: false
