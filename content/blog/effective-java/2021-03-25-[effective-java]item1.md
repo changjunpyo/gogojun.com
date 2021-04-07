@@ -1,5 +1,5 @@
 ---
-title: '[effective-Java] Item1. 생성자 대신 정적 팩토리 메서드를 고려하자'
+title: '[Effective-Java] Item1. 생성자 대신 정적 팩토리 메서드를 고려하자'
 date: 2021-03-25 22:03:47
 category: effective-java
 thumbnail: { thumbnailSrc }

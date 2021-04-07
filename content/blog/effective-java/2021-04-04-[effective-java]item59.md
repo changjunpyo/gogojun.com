@@ -1,5 +1,5 @@
 ---
-title: '[effective-Java] Item59. 라이브러리를 익히고 사용하라'
+title: '[Effective-Java] Item59. 라이브러리를 익히고 사용하라'
 date: 2021-04-04 20:04:36
 category: effective-java
 thumbnail: { thumbnailSrc }

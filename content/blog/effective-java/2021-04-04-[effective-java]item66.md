@@ -1,5 +1,5 @@
 ---
-title: '[effective-Java] Item66. 네이티브 메서드는 신중히 사용하라'
+title: '[Effective-Java] Item66. 네이티브 메서드는 신중히 사용하라'
 date: 2021-04-04 20:04:55
 category: effective-java
 thumbnail: { thumbnailSrc }
@@ -14,7 +14,7 @@ draft: false
 
 > 네이티브 언어는 언매니지드(Unmanaged) 언어라고도 말하며 컴파일을 통해 OS에서 해석 가능한 기계어로 바로 번역이 된다. 이와 반대로 매니지드(managed) 언어라는 것은 java의 JVM, CLR과 같은 가상 머신이 중간에 들어가게 되고 여러 메모리 관리, 플랫폼 이식성과 같은 여러 부분을 처리해준다.
 
-사용 방법은 다음 글을 참조 [JNI 사용하기](https://gogojun.com/jni/2021-04-04-[jni]-jni-tutorial)
+간단한 사용기는 다음 글을 참조 [JNI로 Hello World! 출력하기](https://gogojun.com/jni/2021-04-04-[jni]-jni-tutorial)
 
 
 ## 네이티브 메서드를 쓰는 경우
