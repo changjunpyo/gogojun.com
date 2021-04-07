@@ -1,7 +1,7 @@
 ---
 title: "[JNI] 자바 네이티브 메서드 인터페이스 기본"
 date: 2021-04-04 19:04:76
-category: JNI
+category: jni
 thumbnail: { thumbnailSrc }
 draft: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: 블로그를 '다시' 시작하며...
+title: "[Essay] 블로그를 '다시' 시작하며..."
 date: 2021-03-03 23:03:49
 category: essay
 draft: false
