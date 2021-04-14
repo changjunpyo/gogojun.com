@@ -101,7 +101,7 @@ Integer sum = 0;
 
    자바에서 매개변수화 타입이나 매개변수화 메서드의 타입 매개변수로는 박싱된 기본 타입을 써야한다.
 
-   ArrayList<int>는 불가능 하며, ArraList<Integer>라고 작성하여야 한다.
+   `ArrayList<int>`는 불가능 하며, `ArraList<Integer>`라고 작성하여야 한다.
 
 2. **리플렉션**을 통해 메서드를 호출 하는 경우
 

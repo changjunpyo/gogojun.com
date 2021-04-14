@@ -14,7 +14,7 @@ draft: false
 
 값을 표현하는게 아니라 동작하는 개체를 표현하는 클래스들이 여기에 해당된다. 주로 Thread라는 실행단위를 나타내기 때문 이런 클래스는 기존의 `Object`의 `equals` 메서드를 그대로 사용해도 된다.
 
-### 2. 인스턴스의 '논리정 동치성'을 검사할 일이 없다.
+### 2. 인스턴스의 '논리적 동치성'을 검사할 일이 없다.
 
 예를 들어, `java.util.Random` 클래스가 존재하는데, 이 클래스에서 `equals`는 랜덤 객체가 같은 난수열을 가지는지 확인할 수 있게 재정의 할 수 있었지만, 이 클래스를 만드는 사람은 그런 기능을 클라이언트가 원할 것이라고 생각하지 않았기 때문에 만들지 않았습니다.
 
@@ -235,7 +235,7 @@ public class ColorPoint{
   
   @Override
   public boolean equals(Object o){
-    if (!(o instanceof Point)){
+    if (!(o instanceof ColorPoint)){
       return false;
     }
     ColorPoint cp = (ColorPoint)o;
