@@ -6,7 +6,6 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-# [Java] data type, variable, array
 
 Data의 타입이라는 것은 해당 자료가 메모리에 어떤 방식으로 저장되는지 명시적으로 알려주는 것이다. 
 크게 2가지의 타입으로 **기본형(Primitive)** 타입과 **참조형(Reference)** 타입이 존재한다.

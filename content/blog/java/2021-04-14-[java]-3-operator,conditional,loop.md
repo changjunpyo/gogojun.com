@@ -6,7 +6,6 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-
 ### 기본 용어
 
 **연산자(Operator)**: 어떠한 기능(연산)을 수행하는 기호(+, - , *, / 등)
@@ -279,17 +278,17 @@ switch(i){
 }
 ```
 
-Java 12에서 부터는 Switch 연산자를 단일 케이스문이 아닌 Multicase 문을 허용하였고 화살표 연산자, `break`를 통해 리턴 값을 보낼 수 있게 하였다.  
+Java 12에서 부터는 Switch 연산자를 단일 케이스문이 아닌 Multicase 문을 허용하였고 화살표 연산자를 허용
 
 ```java
 int x = switch(i){
   case 1 -> 1; // 화살표를 통한 리턴
-  case 2: break 2; // break를 통한 리턴
+  case 2 -> 2; 
   case 3,4 -> 3; // 멀티 케이스 구문
 }
 ```
 
-java 13에서부터는 `break`문 `return` 역할을 `yield` 키워드로 변경
+java 13에서부터는 `return` 역할을 `yield` 키워드로 변경
 
 ```java
 int x = switch(i){
