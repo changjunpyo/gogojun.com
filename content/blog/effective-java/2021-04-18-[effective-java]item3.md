@@ -106,3 +106,4 @@ public enum Singleton {
 
 #### 참조
 *1. Effective java 3/e , by Joshua Bloch*
+*2. GoF의 디자인 패턴 , by Joshua Bloch*
