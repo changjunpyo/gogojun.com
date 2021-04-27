@@ -1,5 +1,5 @@
 ---
-title: '[Java] 5. Inheritance'
+title: '[Java] 5. 상속'
 date: 2021-04-24 22:04:05
 category: java
 thumbnail: { thumbnailSrc }
