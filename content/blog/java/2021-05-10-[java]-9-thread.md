@@ -134,7 +134,7 @@ void setDaemon(boolean on)
 
 
 
-![threadLifeCycle](/Users/junpyojang/Desktop/threadLifeCycle.jpeg)
+![threadLifeCycle](./images/threadLifeCycle.jpeg)
 
 (Reference: https://www.geeksforgeeks.org/lifecycle-and-states-of-a-thread-in-java/)
 
