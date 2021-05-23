@@ -3,7 +3,7 @@ title: '[Java] 13. 제네릭'
 date: 2021-05-22 21:05:27
 category: java
 thumbnail: { thumbnailSrc }
-draft: true
+draft: false
 ---
 
 ### 목표
@@ -177,6 +177,36 @@ public static <T extends Integer> int addInteger(GenericExample<T> ge){
 ```
 
 위와 같이 메서드에 들어올 수 있는 타입 파라미터를 `Integer`로 제한함으로 컴파일 타임에 위와 같은 문제를 생기지 않도록 제한 해줄 수 있다.
+
+추가적으로 아래처럼 여러 조건을 전부 만족시키는 인터섹션을 통한 바운디드 타입을 지정할 수 있다.
+```java
+public static <T extends Integer & Comparable & Serializable> int addInteger(GenericExample<T> ge){
+  T t = ge.getValue();
+  // 타입 캐스팅을 할 필요가 없어짐
+  return t + 4;
+}
+```
+
+### 제네릭과 상속
+바운디드 타입과 관련해서 제네릭에서 상속 관계를 잘못 생각할 수 있다. 
+
+제네릭의 타입 파라미터가 상속 관계를 가지고 있다고 해서 제네릭 클래스끼리 상속관계를 가지고 있지 않다.
+
+예를 들면, Integer 클래스는 Number 클래스를 상속 받는다. 하지만 List<Integer>는 List<Number>와 상속 관계에 있지 않다는 점이다. 아래 예시를 보자.
+
+```java
+
+Number n = 10;
+Integer i = n; // OK, 상속 관계
+
+List<Number> ln = new ArrayList<>();
+List<Integer> li = ln // compile time error, 상속관계가 아님
+```
+
+하지만 다르게 같은 타입 파라미터를 가지고 있고 클래스(인터페이스)끼리 상속관계를 가지고 있다면 제네릭 또한 서브 타입 관계 또한 유지된다. 
+
+예를 들어, Collection 타입을 List가 상속 받고 그 List를 ArrayList가 구현하는 관계에 있다고 하면
+List<Integer>는 Collection<Integer>를 상속받고, ArrayList<Integer>를 List<Integer>가 구현하는 관계 또한 유지 된다. 
 
 ## Wildcard(와일드 카드)
 
