@@ -180,7 +180,7 @@ public static <T extends Integer> int addInteger(GenericExample<T> ge){
 
 추가적으로 아래처럼 여러 조건을 전부 만족시키는 인터섹션을 통한 바운디드 타입을 지정할 수 있다.
 ```java
-public static <T extends Integer & Comparable & Serializable> int addInteger(GenericExample<T> ge){
+public static <T extends Integer & Comparable<Integer> & Serializable> int addInteger(GenericExample<T> ge){
   T t = ge.getValue();
   // 타입 캐스팅을 할 필요가 없어짐
   return t + 4;
@@ -246,7 +246,7 @@ public class GenericExample2 {
           new ChildB())
           
        // ParentA의 상위 타입만 가능
-       List<? extends ParerntB> wildcardExtendsTest= Arrays.asList(
+       List<? super ParerntA> wildcardExtendsTest= Arrays.asList(
           new GrandParent(),
           new ParentA())   
          
